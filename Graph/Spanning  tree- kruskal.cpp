@@ -1,17 +1,10 @@
+#include<bits/stdc++.h>
 int par[505];
 
-struct edge
-{
+struct edge{
     int u, v, w;
-
     edge() {}
-    edge(int _u, int _v, int _w)
-    {
-        u = _u;
-        v = _v;
-        w = _w;
-    }
-
+    edge(int u, int v, int w):u(u), v(v), w(w){}
     bool operator<(const edge &p)const{
         return w<p.w;
     }
@@ -47,17 +40,14 @@ int main()
 
     scanf("%d %d", &n, &m);
 
-    for(i=0; i<m; i++)
-    {
+    for(i=0; i<m; i++){
         scanf("%d %d %d", &x, &y, &z);
-
         E.push_back(edge(x, y, z));
     }
 
     sort(E.begin(), E.end());
 
-    for(i=0; i<E.size(); i++)
-    {
+    for(i=0; i<E.size(); i++){
             x = E[i].u;
             y = E[i].v;
             z = E[i].w;

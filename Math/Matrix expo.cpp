@@ -7,8 +7,7 @@ struct Matrix
 {
     i64 r, c, a[20][20];
  
-    Matrix()
-    {
+    Matrix(){
         memset(a, 0,sizeof(a));
     }
  

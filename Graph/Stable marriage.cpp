@@ -6,8 +6,7 @@ int wPartner[105];
 bool mPartner[105];
 int N;
 
-bool wpreference(int w, int m, int m1)
-{
+bool wpreference(int w, int m, int m1){
     for (int i = 1; i <= N; i++)
     {
         if(prefer[w][i] == m1) return true;

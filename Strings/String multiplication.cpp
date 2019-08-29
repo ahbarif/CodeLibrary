@@ -1,14 +1,8 @@
-//  Converting number to string
-
-
-template < class T > string ToString ( T n )
-{
+template < class T > string ToString ( T n ){
     	ostringstream ss;
     	ss << n;
     	return ss.str();
 }
-
-
 
 //	String multiplication
 
